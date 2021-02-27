@@ -6,7 +6,7 @@
 Оружие с этой способностью постепенно восстанавливают здоровье и/или броню своего владельца, когда находится в руках.
 
 ## Требования
-- [Custom Weapons API](https://github.com/ArKaNeMaN/amxx-CustomWeaponsAPI) 0.6.0-beta или новее
+- [Custom Weapons API](https://github.com/ArKaNeMaN/amxx-CustomWeaponsAPI) 0.7.0 или новее
 
 ## Параметры способности
 
@@ -26,8 +26,8 @@
     - Лимит регенерации брони.
     - По умолчанию: `100`
 - `ArmorHelm`
-    - Выдавать ли шлем, если его нет. (`true`/`false`)
-    - По умолчанию: `true`
+    - Выдавать ли шлем, если его нет. (`0`/`1`)
+    - По умолчанию: `1`
 
 ## Пример
 
@@ -38,9 +38,9 @@
     "DefaultName": "knife",
     "Abilities": {
         "Regen": {
-            "Delay": 1.5,
-            "Health": 1,
-            "Armor": 3
+            "Delay": "1.5",
+            "Health": "1",
+            "Armor": "3"
         }
     }
 }
