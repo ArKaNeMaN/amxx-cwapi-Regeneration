@@ -52,6 +52,9 @@ new const PLUG_VER[] = "2.0.0";
 public CWAPI_LoadWeaponsPost(){
     register_plugin(PLUG_NAME, PLUG_VER, "ArKaNeMaN");
 
+    if(!CWAPI_CheckVersionV1(0.7.0))
+        set_fail_state("[ERROR] Required CWAPI v0.7.0 or above.");
+
     Params = TrieCreate();
 
     new Array:WeaponsList = CWAPI_GetAbilityWeaponsList(ABIL_NAME);
