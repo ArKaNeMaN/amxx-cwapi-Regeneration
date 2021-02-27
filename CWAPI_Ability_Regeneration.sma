@@ -47,7 +47,7 @@ new Trie:Params; // ["WeaponId"] => [E_AbilParams]
 #define GetWeaponAbil(%1,%2) TrieGetArray(Params,IntToStr(CWAPI_GetWeaponIdFromEnt(%1)),%2,E_AbilParams)
 
 new const PLUG_NAME[] = "[CWAPI][Ability] Regeneration";
-new const PLUG_VER[] = "2.0.0";
+new const PLUG_VER[] = "2.0.1";
 
 public CWAPI_LoadWeaponsPost(){
     register_plugin(PLUG_NAME, PLUG_VER, "ArKaNeMaN");
@@ -92,7 +92,7 @@ public Hook_CWAPI_Holster(const ItemId){
 }
 
 public Task_Regen(const ItemId){
-    if(is_entity(ItemId))
+    if(!is_entity(ItemId))
         return remove_task(ItemId);
 
     static UserId;
