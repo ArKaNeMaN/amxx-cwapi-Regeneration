@@ -5,6 +5,10 @@
 
 Оружие с этой способностью постепенно восстанавливают здоровье и/или броню своего владельца, когда находится в руках.
 
+## Обновление до CustomWeapnsAPI v1.0.0
+
+Способность регенерации для новой версии CWAPI - [CWAPI-A-HealthBundle](https://github.com/AmxxModularEcosystem/CWAPI-A-HealthBundle)
+
 ## Требования
 - [Custom Weapons API](https://github.com/ArKaNeMaN/amxx-CustomWeaponsAPI) 0.7.0 или новее
 
